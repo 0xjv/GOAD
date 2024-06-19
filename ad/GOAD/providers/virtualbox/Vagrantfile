@@ -40,12 +40,12 @@ end
 # ]
 
   config.vm.provider "virtualbox" do |v|
-    v.memory = 4000
+    v.memory = 2048
     v.cpus = 2
   end
 
   config.vm.provider "vmware_desktop" do |v|
-    v.vmx["memsize"] = "4000"
+    v.vmx["memsize"] = "2048"
     v.vmx["numvcpus"] = "2"
   end
 
